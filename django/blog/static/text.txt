@@ -1,0 +1,1 @@
+Suppose u and v both have values of type set and are disjoint. Which of the following expressions evaluates to True?
