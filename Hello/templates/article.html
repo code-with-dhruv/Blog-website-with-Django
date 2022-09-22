@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}{{post.title}}{% endblock title %}
+{% block article %}
+
+</ul>
+<h1>{{post.title}}</h1>
+<small> By: {{post.author}}-{{post.date}}</small><br/>
+<hr>
+<br/>
+{{post.body}}
+
+
+
+<br/><br/>
+<a href="{% url 'sci' %}" class="btn btn-secondary">Back</a>
+
+{% endblock article %}

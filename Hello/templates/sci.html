@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}<h1>Featured Posts</h1>{% endblock title %}
+{% load static %}
+
+{% block content %}
+{%for post in object_list%}
+    <li><a href="{% url 'article' post.pk %}">{{post.title}}</a> -{{post.author}}<small>-{{post.date}}</small><br/>
+    </li>
+{% endfor %}
+
+
+
+  {% endblock content %}
